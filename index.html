@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller-eventos</title>
+    <style>
+        /* Estilo para el div */
+        .boton-container {
+            padding: 5px;
+            background-color: green;
+            display: inline-block; /* Esto permite que el div ocupe solo el espacio necesario */
+        }
+    </style>
 </head>
 <body>
-    <button onclick="mostrarAlerta()">Saludar</button>
 
-    <script>
-        function mostrarAlerta() {
-            alert("Hola!");
-        }
-    </script>
+    <div id="miDiv" class="boton-container">
+    <button onclick="mostrarAlerta()">Saludar</button>
+    </div>
+
+    <script src="eventos.js"></script>
 </body>
 </html>
